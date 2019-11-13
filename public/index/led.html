@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LED On and Off Example</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+	<script src="/socket.io/socket.io.js" type="text/javascript"></script>
+
+	<style>
+		.container {
+			width: auto;
+			max-width: 680px;
+			padding: 0 15px;
+		}
+
+		.footer {
+			background-color: #f5f5f5;
+		}
+	</style>
+</head>
+<body class="d-flex flex-column h-100">
+	<main role="main" class="flex-shrink-0">
+		<div class="container">
+			<h1 class="mt-5">Beep Boop Beep</h1>
+			<p class="lead">Toggle my LED On/Off</p>
+			<p>
+				<button type="button" id="buttonOn" class="btn btn-success btn-lg btn-block">TURN LED ON</button>
+				<button type="button" id="buttonOff" class="btn btn-danger btn-lg btn-block">TURN LED OFF</button>
+			</p>
+		</div>
+	</main>
+
+	<footer class="footer mt-auto py-3">
+		<div class="container">
+			<span class="text-muted">An awesome Ro-Framework example!</span>
+		</div>
+	</footer>
+	
+	<script src="/assets/js/jquery-3.4.1.min.js" type="text/javascript"></script>
+	<script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="/assets/pages/index/led.js" type="text/javascript"></script>
+</body>
+</html>
