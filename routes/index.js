@@ -35,6 +35,6 @@ router.get('/led', function (req, res, next) {
 router.use('/example', require('./example'));
 
 // Make assets public
-router.use("/assets", express.static(path.join(__dirname , '../public/assets')));
+router.use("/public", express.static(path.join(__dirname , '../public')));
 
 module.exports = router;
